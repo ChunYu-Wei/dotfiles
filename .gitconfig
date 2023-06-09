@@ -3,3 +3,5 @@
     lg = log --oneline --graph
     co = checkout
     br = branch
+[core]
+    editor = vim
