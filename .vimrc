@@ -21,8 +21,8 @@ call plug#end()
 " ClangFormat
 autocmd FileType cpp ClangFormatAutoEnable
 
+" MatchUp
 let g:matchup_matchparen_offscreen = {}
-nnoremap <C-W> :MatchupWhereAmI??<CR>
 nnoremap [[ %
 
 " Tagbar
