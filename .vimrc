@@ -1,4 +1,29 @@
 set nocompatible
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
+" Plugin
+call plug#begin('./.vim/autoload')
+Plug 'preservim/NERDTree'
+call plug#end()
+
+" NerdTree
+nnoremap <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
+
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | wincmd p | q | endif
+" Start NERDTree when Vim starts with a directory argument.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
+    \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | q | endif
+
+" configuration
 syntax enable
 set clipboard=unnamed
 set wildmenu
@@ -41,9 +66,6 @@ inoremap "" "
 inoremap ' ''<Left>
 inoremap '' '
 inoremap <> <><Left>
-
-nnoremap <C-j> <C-d>
-nnoremap <C-k> <C-u>
 
 " disable arrow keys
 nnoremap <Left>  :echoe "Use h"<CR>
@@ -109,4 +131,3 @@ function! StatuslineMode()
         return "SHELL"
     endif
 endfunction
-
