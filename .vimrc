@@ -11,6 +11,7 @@ Plug 'preservim/NERDTree'
 Plug 'preservim/nerdcommenter'
 Plug 'majutsushi/tagbar'
 Plug 'craigemery/vim-autotag'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 " NerdTree
