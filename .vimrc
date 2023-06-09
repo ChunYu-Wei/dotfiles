@@ -31,13 +31,16 @@ set noshowmode
 inoremap ( ()<Left>
 inoremap (( (
 inoremap (<CR> <Esc>o(<Esc>o)<Esc>O
+inoremap { {}<Left>
+inoremap {{ {
+inoremap {<CR> <Esc>o{<Esc>o}<Esc>O
+inoremap [ []<Left>
+inoremap [[ [
 inoremap " ""<Left>
 inoremap "" "
 inoremap ' ''<Left>
 inoremap '' '
-inoremap { {}<Left>
-inoremap {{ {
-inoremap {<CR> <Esc>o{<Esc>o}<Esc>O
+inoremap <> <><Left>
 
 " disable arrow keys
 nnoremap <Left>  :echoe "Use h"<CR>
