@@ -9,6 +9,8 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 call plug#begin('~/.vim/autoload')
 Plug 'preservim/NERDTree'
 Plug 'preservim/nerdcommenter'
+Plug 'majutsushi/tagbar'
+Plug 'craigemery/vim-autotag'
 call plug#end()
 
 " NerdTree
