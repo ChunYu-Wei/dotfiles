@@ -27,6 +27,12 @@ set mouse=a
 set hlsearch
 set noshowmode
 
+" automatically add matching brace
+inoremap ( ()<ESC>i
+inoremap " ""<ESC>i
+inoremap ' ''<ESC>i
+inoremap { <Esc>o{<Esc>o}<Esc>ko
+
 " disable arrow keys
 nnoremap <Left>  :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
