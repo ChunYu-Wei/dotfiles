@@ -118,6 +118,10 @@ endfunction
 inoremap <expr> <tab> InsertTabWrapper()
 inoremap <s-tab> <c-n>
 
+" Use absolute line number in INSERT and relative line number in NORMAL
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set relativenumber
+
 " status bar
 
 augroup statusline
