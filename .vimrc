@@ -28,10 +28,16 @@ set hlsearch
 set noshowmode
 
 " automatically add matching brace
-inoremap ( ()<ESC>i
-inoremap " ""<ESC>i
-inoremap ' ''<ESC>i
-inoremap { <Esc>o{<Esc>o}<Esc>ko
+inoremap ( ()<Left>
+inoremap (( (
+inoremap (<CR> <Esc>o(<Esc>o)<Esc>O
+inoremap " ""<Left>
+inoremap "" "
+inoremap ' ''<Left>
+inoremap '' '
+inoremap { {}<Left>
+inoremap {{ {
+inoremap {<CR> <Esc>o{<Esc>o}<Esc>O
 
 " disable arrow keys
 nnoremap <Left>  :echoe "Use h"<CR>
