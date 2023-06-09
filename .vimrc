@@ -16,10 +16,13 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 call plug#end()
 
+" Tagbar
+nnoremap <C-T> :TagbarToggle<CR>
+
 " NerdTree
-" nnoremap <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
+nnoremap <C-N> :NERDTreeToggle<CR>
 
 " Start NERDTree when Vim is started without file arguments.
 autocmd StdinReadPre * let s:std_in=1
