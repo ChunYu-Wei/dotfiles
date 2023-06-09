@@ -41,7 +41,6 @@ set clipboard=unnamed
 set wildmenu
 set number
 set relativenumber
-highlight LineNr ctermfg=white cterm=bold
 set noruler
 set ignorecase
 set smartcase
@@ -63,6 +62,11 @@ set autowrite
 set mouse=a
 set hlsearch
 set noshowmode
+set t_Co=256
+set background=dark
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
+highlight LineNr ctermfg=white cterm=bold
 
 " automatically add matching brace
 inoremap ( ()<Left>
