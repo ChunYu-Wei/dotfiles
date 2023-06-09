@@ -25,8 +25,6 @@ set nowrap
 set autowrite
 set mouse=a
 set hlsearch
-set ttimeout
-set ttimeoutlen=0
 set noshowmode
 
 " disable arrow keys
