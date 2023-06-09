@@ -23,8 +23,6 @@ set showmode
 set nowrap
 set autowrite
 set mouse=a
-set cursorline
-set cursorcolumn
 set hlsearch
 set ttimeout
 set ttimeoutlen=0
