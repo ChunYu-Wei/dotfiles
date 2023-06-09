@@ -4,6 +4,7 @@ set clipboard=unnamed
 set wildmenu
 set number
 set relativenumber
+highlight LineNr ctermfg=white cterm=bold
 set noruler
 set ignorecase
 set smartcase
@@ -40,11 +41,13 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
+" status bar
+
 augroup statusline
     autocmd!
     autocmd CmdlineEnter * redrawstatus
 augroup END
-" status bar
+
 set laststatus=2
 set statusline=
 set statusline+=%2*
@@ -68,7 +71,7 @@ set statusline+=%F
 set statusline+=\ 
 
 hi User1 ctermbg=darkgray ctermfg=white
-hi User2 ctermbg=lightgrey ctermfg=237
+hi User2 ctermbg=lightgrey ctermfg=237 cterm=bold
 hi User3 ctermbg=234 ctermfg=250
 
 function! StatuslineMode()
