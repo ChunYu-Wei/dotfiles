@@ -25,6 +25,9 @@ set mouse=a
 set cursorline
 set cursorcolumn
 set hlsearch
+set ttimeout
+set ttimeoutlen=50
+set noshowmode
 
 " disable arrow keys
 nnoremap <Left>  :echoe "Use h"<CR>
@@ -37,15 +40,57 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
+augroup statusline
+    autocmd!
+    autocmd CmdlineEnter * redrawstatus
+augroup END
 " status bar
 set laststatus=2
-set statusline=%4*%<\ %1*[%F]
-set statusline+=%4*\ %5*[%{&encoding}, " encoding
-set statusline+=%{&fileformat}]%m " file format
-set statusline+=%4*%=\ %6*%y%4*\ %3*%l%4*,\ %3*%c%4*\ \<\ %2*%P%4*\ \>
-highlight User1 ctermfg=red
-highlight User2 term=underline cterm=underline ctermfg=green
-highlight User3 term=underline cterm=underline ctermfg=yellow
-highlight User4 term=underline cterm=underline ctermfg=white
-highlight User5 ctermfg=cyan
-highlight User6 ctermfg=white
+set statusline=
+set statusline+=%1*
+set statusline+=\ 
+set statusline+=%{StatuslineMode()}
+set statusline+=\ 
+set statusline+=%3*
+set statusline+=\ 
+set statusline+=%f
+set statusline+=\ 
+set statusline+=%y
+set statusline+=\ 
+set statusline+=%2*
+set statusline+=\ 
+set statusline+=%P
+set statusline+=\ 
+set statusline+=%3*
+set statusline+=%=
+set statusline+=\ 
+set statusline+=%F
+set statusline+=\ 
+
+
+
+hi User1 ctermbg=darkgray ctermfg=white
+hi User2 ctermbg=lightgrey ctermfg=237
+hi User3 ctermbg=234 ctermfg=250
+
+function! StatuslineMode()
+    let l:mode=mode()
+    if l:mode==#"c"
+        return "COMMAND"
+    elseif l:mode==#"n"
+        return "NORMAL"
+    elseif l:mode==#"t"
+        return "TERMINAL"
+    elseif l:mode==?"v"
+        return "VISUAL"
+    elseif l:mode==#"i"
+        return "INSERT"
+    elseif l:mode==#"R"
+        return "REPLACE"
+    elseif l:mode==?"s"
+        return "SELECT"
+    elseif l:mode==#"!"
+        return "SHELL"
+    endif
+endfunction
+
