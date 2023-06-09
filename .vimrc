@@ -8,6 +8,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " Plugin
 call plug#begin('~/.vim/autoload')
 Plug 'preservim/NERDTree'
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 " NerdTree
@@ -22,6 +23,14 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | wincmd p |
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
     \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | q | endif
+
+" nerdcommenter
+let g:NERDSpaceDelims = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+nnoremap \\ :call nerdcommenter#Comment(0,"toggle")<CR>
+vnoremap \\ :call nerdcommenter#Comment(0,"toggle")<CR>
 
 " configuration
 syntax enable
