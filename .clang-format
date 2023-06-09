@@ -19,3 +19,4 @@ NamespaceIndentation: All
 SortIncludes: false
 Standard: Cpp11
 UseTab: Never
+ColumnLimit: 80
