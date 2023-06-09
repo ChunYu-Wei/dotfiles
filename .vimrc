@@ -67,6 +67,8 @@ set background=dark
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 highlight LineNr ctermfg=white cterm=bold
+highlight Pmenu ctermfg=gray ctermbg=234
+highlight PmenuSel ctermbg=gray ctermfg=234
 
 " automatically add matching brace
 inoremap ( ()<Left>
