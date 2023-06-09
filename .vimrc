@@ -16,7 +16,14 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'andymass/vim-matchup'
 Plug 'rhysd/vim-clang-format'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
+
+" FZF key bindings
+let g:fzf_layout = { 'right': '40%' }
+
+nnoremap <C-F> :FZF<CR>
+let g:fzf_action = { 'ctrl-t': 'tab split' }
 
 " ClangFormat
 autocmd FileType cpp ClangFormatAutoEnable
