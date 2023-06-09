@@ -14,7 +14,7 @@ Plug 'craigemery/vim-autotag'
 call plug#end()
 
 " NerdTree
-nnoremap <C-n> :NERDTreeToggle<CR>
+" nnoremap <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 
