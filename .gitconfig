@@ -1,4 +1,5 @@
 [alias]
-	st = status --short
-	lg = log --oneline --graph
-	co = checkout
+    st = status --short
+    lg = log --oneline --graph
+    co = checkout
+    br = branch
