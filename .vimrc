@@ -18,6 +18,7 @@ call plug#end()
 
 " Tagbar
 nnoremap <C-T> :TagbarToggle<CR>
+let g:tagbar_autofocus=1
 
 " NerdTree
 let NERDTreeShowLineNumbers=1
