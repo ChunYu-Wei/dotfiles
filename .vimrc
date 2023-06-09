@@ -15,7 +15,11 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'andymass/vim-matchup'
+Plug 'rhysd/vim-clang-format'
 call plug#end()
+
+" ClangFormat
+autocmd FileType cpp ClangFormatAutoEnable
 
 let g:matchup_matchparen_offscreen = {}
 nnoremap <C-W> :MatchupWhereAmI??<CR>
