@@ -18,6 +18,7 @@ set smarttab
 set confirm
 set backspace=indent,eol,start
 set history=500
+set cursorline
 set showcmd
 set showmode
 set nowrap
