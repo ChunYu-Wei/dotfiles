@@ -70,9 +70,9 @@ set statusline+=\
 set statusline+=%F
 set statusline+=\ 
 
-hi User1 ctermbg=darkgray ctermfg=white
+hi User1 ctermbg=darkgray ctermfg=white cterm=bold
 hi User2 ctermbg=lightgrey ctermfg=237 cterm=bold
-hi User3 ctermbg=234 ctermfg=250
+hi User3 ctermbg=234 ctermfg=250 cterm=bold
 
 function! StatuslineMode()
     let l:mode=mode()
