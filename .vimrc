@@ -26,7 +26,7 @@ set cursorline
 set cursorcolumn
 set hlsearch
 set ttimeout
-set ttimeoutlen=50
+set ttimeoutlen=0
 set noshowmode
 
 " disable arrow keys
@@ -47,7 +47,7 @@ augroup END
 " status bar
 set laststatus=2
 set statusline=
-set statusline+=%1*
+set statusline+=%2*
 set statusline+=\ 
 set statusline+=%{StatuslineMode()}
 set statusline+=\ 
@@ -57,7 +57,7 @@ set statusline+=%f
 set statusline+=\ 
 set statusline+=%y
 set statusline+=\ 
-set statusline+=%2*
+set statusline+=%1*
 set statusline+=\ 
 set statusline+=%P
 set statusline+=\ 
@@ -66,8 +66,6 @@ set statusline+=%=
 set statusline+=\ 
 set statusline+=%F
 set statusline+=\ 
-
-
 
 hi User1 ctermbg=darkgray ctermfg=white
 hi User2 ctermbg=lightgrey ctermfg=237
