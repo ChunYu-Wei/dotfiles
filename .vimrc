@@ -14,7 +14,12 @@ Plug 'craigemery/vim-autotag'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'andymass/vim-matchup'
 call plug#end()
+
+let g:matchup_matchparen_offscreen = {}
+nnoremap <C-W> :MatchupWhereAmI??<CR>
+nnoremap [[ %
 
 " Tagbar
 nnoremap <C-T> :TagbarToggle<CR>
