@@ -77,8 +77,9 @@ highlight LineNr ctermfg=white cterm=bold
 highlight Pmenu ctermfg=gray ctermbg=234
 highlight PmenuSel ctermbg=gray ctermfg=234
 
-" pop tags stack
-nnoremap <C-[> <C-T>
+" remap keybinding for tags find definition and tags pop
+nnoremap [d <C-T>
+nnoremap ]d <C-]>
 
 " automatically add matching brace
 inoremap ( ()<Left>
