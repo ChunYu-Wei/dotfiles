@@ -10,8 +10,8 @@ AlignTrailingComments: true
 AlignAfterOpenBracket: true
 AccessModifierOffset: -4
 AlignEscapedNewlinesLeft: true
-BinPackArguments: true
-BinPackParameters: true
+BinPackArguments: false
+BinPackParameters: false
 BreakBeforeBraces: Allman
 BreakConstructorInitializersBeforeComma: true
 Language: Cpp
