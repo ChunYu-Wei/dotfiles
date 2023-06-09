@@ -42,6 +42,9 @@ inoremap ' ''<Left>
 inoremap '' '
 inoremap <> <><Left>
 
+nnoremap <C-j> <C-d>
+nnoremap <C-k> <C-u>
+
 " disable arrow keys
 nnoremap <Left>  :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
