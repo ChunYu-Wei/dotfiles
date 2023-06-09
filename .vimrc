@@ -72,6 +72,9 @@ highlight LineNr ctermfg=white cterm=bold
 highlight Pmenu ctermfg=gray ctermbg=234
 highlight PmenuSel ctermbg=gray ctermfg=234
 
+" pop tags stack
+nnoremap <C-[> <C-T>
+
 " automatically add matching brace
 inoremap ( ()<Left>
 inoremap (( (
