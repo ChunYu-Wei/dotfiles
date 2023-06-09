@@ -6,7 +6,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 " Plugin
-call plug#begin('./.vim/autoload')
+call plug#begin('~/.vim/autoload')
 Plug 'preservim/NERDTree'
 call plug#end()
 
