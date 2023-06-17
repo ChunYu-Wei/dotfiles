@@ -88,6 +88,7 @@ set t_Co=256
 set background=dark
 set timeoutlen=1000
 set ttimeoutlen=5
+set signcolumn=no
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 highlight LineNr ctermfg=white cterm=bold
