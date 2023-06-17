@@ -10,3 +10,5 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 export EDITOR=vim
+
+source .bash/prompt.sh
