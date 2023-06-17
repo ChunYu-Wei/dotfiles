@@ -18,7 +18,13 @@ Plug 'andymass/vim-matchup'
 Plug 'rhysd/vim-clang-format'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'vim-syntastic/syntastic'
 call plug#end()
+
+" Syntastic
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_auto_jump = 1
 
 " FZF
 let g:fzf_preview_window = ['hidden,up,80%', 'ctrl-o']
@@ -94,6 +100,7 @@ highlight nonText ctermbg=NONE
 highlight LineNr ctermfg=white cterm=bold
 highlight Pmenu ctermfg=gray ctermbg=234
 highlight PmenuSel ctermbg=gray ctermfg=234
+highlight SyntasticErrorLine ctermbg=196
 
 " remap keybinding for tags find definition and tags pop
 nnoremap [d <C-T>
