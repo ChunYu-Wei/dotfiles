@@ -19,7 +19,12 @@ Plug 'rhysd/vim-clang-format'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-syntastic/syntastic'
+Plug 'preservim/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
+
+" Markdown
+let g:vim_markdown_folding_disabled = 1
 
 " Syntastic
 let g:syntastic_check_on_open = 1
