@@ -9,6 +9,9 @@ alias l='ls'
 alias cp='cp -i'
 alias mv='mv -i'
 
+# git aliases
+alias g='git'
+
 export EDITOR=vim
 
 source .bash/prompt.sh

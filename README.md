@@ -66,7 +66,26 @@
 - `prefix z` : toggle focusing on a specific window
 
 ## Git
-- `$ git lg` : alias of `git log --oneline --graph` 
-- `$ git st` : alias of `git status --short`
-- `$ git co` : alias of `git checkout`
-- `$ git br` : alias of `git branch`
+- `a` : add
+- `st` : status --short
+- `cm` : commit -v
+- `cma` : commit --amend -v
+- `rt` : restore
+- `rts` : restore --staged
+- `lg` : log --oneline --graph
+- `lga` : log --oneline --graph --all
+- `co` : checkout
+- `br` : branch -vv
+- `bra` : branch -vv --all
+- `di` : diff
+- `dis` : diff --stat
+- `diw` : diff --color-words
+- `dic` : diff --cached
+- `dics` : diff --cached --stat
+- `dicw` : diff --cached --color-words
+- `dcw` : diff --cached --color-words
+- `sh` : show
+- `shs` : show --stat
+- `shw` : show --color-words
+- `rb` : rebase
+- `rbc` : rebase --continue
