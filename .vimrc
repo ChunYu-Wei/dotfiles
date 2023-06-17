@@ -17,13 +17,13 @@ Plug 'junegunn/gv.vim'
 Plug 'andymass/vim-matchup'
 Plug 'rhysd/vim-clang-format'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
-" FZF key bindings
-let g:fzf_layout = { 'right': '40%' }
-
-nnoremap <C-F> :FZF<CR>
+" FZF
+let g:fzf_preview_window = ['hidden,up,80%', 'ctrl-o']
 let g:fzf_action = { 'ctrl-t': 'tab split' }
+let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 0.7, 'relative': v:true, 'yoffset': 1.0 } }
 
 " ClangFormat
 autocmd FileType cpp ClangFormatAutoEnable
