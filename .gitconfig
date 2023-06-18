@@ -20,5 +20,7 @@
     sh = show
     shs = show --stat
     shw = show --color-words
+    rb = rebase
+    rbc = rebase --continue
 [core]
     editor = vim
