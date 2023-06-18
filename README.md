@@ -56,6 +56,12 @@
 #### Autocomplete
 - `<tab>` : autocomplete keywords
 
+#### Undo Tree
+- `ctrl-G` : toggle the undo tree open/close
+- `j/k` : navigate between undo node
+- `p` : preview the diff between the node and current node
+- `enter` : revert to the undo node
+
 ## TMUX
 - `ctrl-a` : prefix
 - `prefix |` : split window vertically

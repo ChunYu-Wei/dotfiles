@@ -21,7 +21,15 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'preservim/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'sjl/gundo.vim'
 call plug#end()
+
+" Gundo
+nnoremap <C-G> :GundoToggle<CR>
+let g:gundo_return_on_revert=0
+let g:gundo_preview_height=14
+let g:gundo_width=45
+let g:gundo_help=0
 
 " Markdown
 let g:vim_markdown_folding_disabled = 1
@@ -154,7 +162,7 @@ inoremap <s-tab> <c-n>
 autocmd InsertEnter * :set norelativenumber
 autocmd InsertLeave * :set relativenumber
 
-" status bar
+" vim status bar
 
 augroup statusline
     autocmd!
@@ -207,3 +215,7 @@ function! StatuslineMode()
         return "SHELL"
     endif
 endfunction
+
+" gundo status bar
+let g:gundo_preview_statusline="%3* Gundo Preview %1* %P %3*"
+let g:gundo_tree_statusline="%3* Gundo Tree %1* %P %3*"
