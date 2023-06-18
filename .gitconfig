@@ -24,3 +24,5 @@
     rbc = rebase --continue
 [core]
     editor = vim
+[commit]
+    template = .gitmessage
