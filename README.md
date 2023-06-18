@@ -26,6 +26,7 @@
 
 #### Jump between Brackets
 - `[[` : jump between paired brackets
+- `ctrl-m` : locates the postion in nested brackets
 
 #### Clang Format
 - automatically format c++ codes when `:w`

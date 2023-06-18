@@ -49,6 +49,7 @@ autocmd FileType cpp ClangFormatAutoEnable
 
 " MatchUp
 let g:matchup_matchparen_offscreen = {}
+nnoremap <C-M> :MatchupWhereAmI??<CR>
 nnoremap [[ %
 
 " Tagbar
