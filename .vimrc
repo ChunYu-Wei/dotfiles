@@ -22,7 +22,11 @@ Plug 'vim-syntastic/syntastic'
 Plug 'preservim/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'sjl/gundo.vim'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
+
+" Easy Motion
+map <Leader> <Plug>(easymotion-prefix)
 
 " Gundo
 nnoremap <C-G> :GundoToggle<CR>
