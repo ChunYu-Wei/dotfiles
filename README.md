@@ -66,6 +66,9 @@
 #### Navigate between tabs
 - `\<num>` : navigate to the ith tab
 
+#### GDB
+- `ctrl+b` : open the gdb interface
+
 ## TMUX
 - `ctrl-a` : prefix
 - `prefix |` : split window vertically

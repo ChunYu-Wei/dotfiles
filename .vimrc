@@ -83,6 +83,7 @@ vnoremap \\ :call nerdcommenter#Comment(0,"toggle")<CR>
 
 " configuration
 syntax enable
+packadd termdebug
 set clipboard=unnamed
 set wildmenu
 set number
@@ -160,6 +161,13 @@ nnoremap <leader>6 6gt
 nnoremap <leader>7 7gt
 nnoremap <leader>8 8gt
 nnoremap <leader>9 9gt
+
+" termdebug
+nnoremap <C-B> :Termdebug %:r<CR><c-w>2j<c-w>L:aunmenu WinBar<CR><c-w>h
+let g:termdebug_use_prompt = 1
+let g:termdebug_winbar = 0
+hi debugPC ctermbg=darkgrey guibg=darkgrey
+hi debugBreakpoint term=reverse ctermbg=yellow guibg=yellow ctermfg=black guifg=black
 
 " autocomplete
 set complete=.,w,b,u,t
