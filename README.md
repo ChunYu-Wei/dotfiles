@@ -63,6 +63,9 @@
 - `p` : preview the diff between the node and current node
 - `enter` : revert to the undo node
 
+#### Navigate between tabs
+- `\<num>` : navigate to the ith tab
+
 ## TMUX
 - `ctrl-a` : prefix
 - `prefix |` : split window vertically
