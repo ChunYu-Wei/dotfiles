@@ -13,7 +13,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 CASE_SENSITIVE="true"
 
 # Custom plugins added to $ZSH_CUSTOM/plugins/
-plugins=(git vi-mode)
+plugins=(
+    git
+    vi-mode
+    zsh-autosuggestions
+    zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
