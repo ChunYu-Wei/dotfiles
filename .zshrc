@@ -37,3 +37,4 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 alias g='git'
+alias cl='clear'
