@@ -23,3 +23,13 @@ export LANG=en_US.UTF-8
 
 # Customized prompt
 [[ ! -f $ZSH/.p10k.zsh ]] || source $ZSH/.p10k.zsh
+
+# Alias
+alias ll='ls -lah'
+alias la='ls -A'
+alias l='ls'
+
+alias cp='cp -i'
+alias mv='mv -i'
+
+alias g='git'
