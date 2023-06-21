@@ -23,6 +23,6 @@
     rb = rebase
     rbc = rebase --continue
 [core]
-    editor = vim
+    editor = nvim
 [commit]
-    template = .gitmessage
+    template = ~/.gitmessage
