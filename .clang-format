@@ -12,7 +12,6 @@ AccessModifierOffset: -4
 AlignEscapedNewlinesLeft: true
 BinPackArguments: false
 BinPackParameters: false
-BreakBeforeBraces: Allman
 BreakConstructorInitializersBeforeComma: true
 Language: Cpp
 NamespaceIndentation: All
