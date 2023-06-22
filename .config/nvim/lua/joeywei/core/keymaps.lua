@@ -64,7 +64,7 @@ keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to decl
 keymap("n", "gh", "<cmd>lua vim.lsp.buf.hover()<CR>", opts) -- got to declaration
 
 -- undo tree
-vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+keymap('n', '<leader>u',"<cmd>lua vim.cmd.UndotreeToggle<CR>")
 
 -- hop
 vim.api.nvim_set_keymap("n", "<Leader>b", "<cmd>HopWordBC<CR>", {noremap=true})
